@@ -1,0 +1,185 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+
+body{
+  width: 100%;
+  height: 100vh;
+  
+}
+
+.container{
+  
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.container::before{
+  content: '';
+  background:url(pexels-officialakfotos-18556827.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(10px);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.circle{
+  width: 10rem;
+  height: 10rem;
+  background: rgba(253, 250, 250, 0.705);
+  border-radius: 50%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  margin-top: -1rem;
+  margin-left: -5rem;
+  pad: 1rem;
+    transition: 0.5s ease;
+      /* transform: rotate(90deg) ; */
+}
+
+
+
+.turn{
+  transform: rotate(-180deg) ;
+}
+
+.circle ion-icon{
+  margin-top: 70%;
+}
+
+.circle ion-icon:hover{
+  cursor: pointer;
+}
+
+.circle .icon1{
+  margin-top: 4rem;
+  margin-left: 1rem;
+
+}
+
+.circle .icon2{
+  margin-left: 7rem;
+  margin-top: 4rem;
+}
+
+.page{
+  position: relative;
+  z-index:1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.page h1{
+  color: #ccc;
+  transition: 0.3s ease-in;
+}
+
+.page h1:hover{
+  color: #ccc;
+  -webkit-text-stroke:1px;
+  -webkit-text-stroke-color: rgb(255, 255, 255);
+  color: transparent;
+  font-size: 90px;
+  margin-bottom: -1.5rem;
+}
+
+.search_area{
+ width: 30rem;
+ height: 2rem;
+ overflow: hidden;
+  background: #ffffff96;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  z-index: 2;
+}
+
+.search_area input{
+  background: transparent;
+  border: none;
+  width: 85%;
+  height :100%;
+  text-indent: 1rem;
+}
+
+.search:hover{
+  cursor: pointer;
+  background-color: #9fc8db;
+}
+
+.search_area button{
+  padding: 0.2rem;
+  border: none;
+  height: 100%;
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rotatePage{
+  transform: rotate(-10deg);
+  transition: 1s ease;
+  transform-origin: left;
+}
+
+.info{
+  position: absolute;
+  bottom: 3rem;
+  left: 1rem;
+  list-style: none;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  transition: 0.3s ease-in;
+  margin-left: -15rem;
+}
+.info li{
+  display:flex;
+  align-items: center;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+    transition: 0.3s ease;
+
+}
+
+.info li:hover{
+  scale: 1.2;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+svg{
+  color: #faf9f9;
+}
+
+.info li+li{
+  margin-left: 3.2rem;
+}
+
+.info :nth-child(3){
+  margin-left: 6rem;
+}
+
+
